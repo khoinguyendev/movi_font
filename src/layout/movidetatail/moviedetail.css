@@ -1,0 +1,89 @@
+.breadcrumb-item+.breadcrumb-item:before {
+    content: "";
+    opacity: .3;
+    width: 1.5rem;
+    height: 1rem;
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    left: -6px;
+    top: 2px;
+    position: absolute;
+}
+
+.cine__cover {
+    background-position: right -200px top;
+}
+
+.cine__cover:after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 1)150px, rgba(0, 0, 0, .6)100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 1)150px, rgba(0, 0, 0, .6)100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 1)150px, rgba(0, 0, 0, .6)100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1)150px, rgba(0, 0, 0, .6)100%);
+}
+
+.movi-detail .button-next {
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .9)30%, rgba(255, 255, 255, 1)50%, #fff 100%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .9)30%, rgba(255, 255, 255, 1)50%, #fff 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .9)30%, rgba(255, 255, 255, 1)50%, #fff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .9)30%, rgba(255, 255, 255, 1)50%, #fff 100%);
+}
+
+.movi-detail .button-prev {
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .9) 30%, rgba(255, 255, 255, 1) 50%, #fff 100%);
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .9) 30%, rgba(255, 255, 255, 1) 50%, #fff 100%);
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .9) 30%, rgba(255, 255, 255, 1) 50%, #fff 100%);
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .9) 30%, rgba(255, 255, 255, 1) 50%, #fff 100%);
+}
+
+.button-swiper.swiper-button-disabled {
+    display: none;
+}
+
+.booking-list-height {
+    min-height: 240px;
+}
+
+.poster-square .poster-2 {
+    left: 12.5%;
+    z-index: 4;
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(2px 0px 2px #000);
+    filter: drop-shadow(2px 0px 2px #000);
+}
+
+.poster-square .poster-3 {
+    left: 25%;
+    z-index: 3;
+}
+
+.poster-square .poster-4 {
+    left: 37.5%;
+    z-index: 2;
+}
+
+.poster-square .poster-5 {
+    left: 50%;
+    z-index: 1;
+}
+
+.poster-square .poster-1 {
+    left: 0%;
+    z-index: 5;
+}
+
+.normal-accordion .icon.open {
+    transform: rotate(90deg);
+}
+
+.opendata {
+    animation: .3s cubic-bezier(.25, .46, .45, .94) both;
+}

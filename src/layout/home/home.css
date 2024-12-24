@@ -1,0 +1,70 @@
+.border-blend::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+    border: 1px solid white;
+    background-color: transparent;
+    content: "";
+    opacity: .2;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+.cinema-rate-red {
+    background-color: #9b2020;
+}
+
+.cinema-rate-k {
+    background-color: #006ee6;
+}
+
+.cinema-rate-orange {
+    background-color: #e88021;
+}
+
+.cinema-rate-green {
+    background-color: #579b41;
+}
+
+.cinema-rate-yellow {
+    background-color: #ddbc3f;
+}
+
+.booking-list-height {
+    min-height: 240px;
+}
+
+.film-show {
+    grid-template: auto 1fr / 120px minmax(0, 1fr);
+}
+
+.cinema-list-height {
+    min-height: 300px;
+}
+
+.booking-list-height {
+    min-height: 240px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .cinema-list-height {
+        height: 550px;
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:text-5xl {
+        font-size: var(--mobase-font-size-5xl);
+        line-height: 3.5rem;
+        letter-spacing: -.075rem;
+    }
+}

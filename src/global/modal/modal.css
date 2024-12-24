@@ -1,0 +1,194 @@
+.modal-to-offcanvas .max-h-modal {
+    max-height: 100%;
+}
+
+.modal-cluster {
+    z-index: 10;
+}
+
+.max-h-modal {
+    max-height: -webkit-calc(100% - 20px);
+    max-height: -moz-calc(100% - 20px);
+    max-height: calc(100% - 20px);
+}
+
+.modal {
+    z-index: 200;
+
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal-trailer {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, .5);
+}
+
+.modalFadeUp {
+    -webkit-animation-duration: 400ms;
+    -moz-animation-duration: 400ms;
+    -o-animation-duration: 400ms;
+    animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: modal-fade-up;
+    -moz-animation-name: modal-fade-up;
+    -o-animation-name: modal-fade-up;
+    animation-name: modal-fade-up;
+}
+
+.transform-component-module_wrapper__SPB86 {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+.transform-component-module_content__FBWxo {
+    display: flex;
+    flex-wrap: wrap;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    transform-origin: 0% 0%;
+}
+
+.cinema-seat-item {
+    width: 2rem;
+    height: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: .375rem;
+    -moz-border-radius: .375rem;
+    border-radius: .375rem;
+    border: 0.125rem solid transparent;
+    -webkit-transition: all.2s ease-in-out;
+    -moz-transition: all.2s ease-in-out;
+    -o-transition: all.2s ease-in-out;
+    transition: all.2s ease-in-out;
+    font-size: .625rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    .cinema-seat-item {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+}
+
+.cinema-seat-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    .cinema-seat-row>:not([hidden])~:not([hidden]) {
+        margin-left: 0.625rem;
+    }
+}
+
+.cinema-seat-row>:not([hidden])~:not([hidden]) {
+    margin-left: 0.35rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .cinema-seat-chart>:not([hidden])~:not([hidden]) {
+        margin-top: 0.625rem;
+    }
+}
+
+.cinema-seat-chart>:not([hidden])~:not([hidden]) {
+    margin-top: 0.35rem;
+}
+
+.cinema-rate-yellow {
+    background-color: #ddbc3f;
+}
+
+.modal-search {
+    width: 320px;
+    right: -20px;
+    left: auto;
+    -webkit-animation: modalOpen .2s ease forwards;
+    -moz-animation: modalOpen .2s ease forwards;
+    -o-animation: modalOpen .2s ease forwards;
+    animation: modalOpen .2s ease forwards;
+}
+
+.modal-search:before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    background: white;
+    border: 2px solid rgb(212 212 212 / var(--tw-border-opacity));
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.modal-search:after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -1;
+}

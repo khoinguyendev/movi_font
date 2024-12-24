@@ -1,6 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
+
+
+
+.wrapper {
+  max-width: 72rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.sticky {
+  position: sticky;
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -11,6 +35,14 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+* {
+  border-color: rgb(var(--mobase-gray-300));
+}
+
+.text-tiny {
+  font-size: .8125rem;
 }
 
 .App-header {
@@ -32,7 +64,21 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-md {
+    font-size: .9375rem;
   }
 }
